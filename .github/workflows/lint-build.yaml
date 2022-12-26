@@ -118,6 +118,6 @@ jobs:
           cache-to: type=inline
           tags: |
             ghcr.io/${{ steps.repo_name.outputs.repo_name }}:latest
-            ghcr.io/${{ steps.repo_name.outputs.repo_name }}${{ steps.sha_tag.outputs.tag }}
+            ghcr.io/${{ steps.repo_name.outputs.repo_name }}:${{ steps.sha_tag.outputs.tag }}
           build-args: |
             git_sha=${{ github.sha }}
