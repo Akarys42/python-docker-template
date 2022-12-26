@@ -86,7 +86,7 @@ jobs:
       - name: Create Container Repository Name
         id: repo_name
         run: |
-          repo_name=$(echo $GITHUB_REPOSITORY | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g')
+          repo_name=$(echo $GITHUB_REPOSITORY | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9\/]/-/g')
           echo "::set-output name=repo_name::$repo_name"
 
       # Check out the current repository in the `app` subdirectory
