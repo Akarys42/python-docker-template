@@ -2,7 +2,7 @@
 name = "app"
 version = "0.1.0"
 description = "Template Python App"
-authors = ["Your Name Here!"]
+authors = ["Your Name Here <yourname@example.com>"]
 license = "MIT"
 readme = "README.md"
 homepage = "https://github.com/..."
