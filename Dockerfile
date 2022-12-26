@@ -11,7 +11,7 @@ WORKDIR /app
 RUN pip install -U poetry
 
 COPY pyproject.toml poetry.lock ./
-RUN poetry install --no-dev
+RUN poetry install --only main
 
 ARG git_sha="development"
 ENV GIT_SHA=$git_sha
